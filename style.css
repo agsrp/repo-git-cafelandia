@@ -77,6 +77,10 @@
 }
 
 .menu-icono{
+    width: 25px;
+}
+
+.menu label{
     cursor: pointer;
     display: none;
 }
@@ -130,6 +134,8 @@ footer {
 }
 
 /* SECCION DE MAIN RECETAS */
+
+
 .recetas{
     background-image: url(mike-kenneally-46284-unsplash-scaled.jpg);
     padding: 4%;
@@ -196,7 +202,7 @@ footer {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgb(89,57,43) 80%, rgb(72,46,35));
+    background-color: #9e4e38;
 }
 
 .productos h1{
@@ -209,10 +215,11 @@ footer {
 }
 
 .productos .prod{
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 80vh;
 }
 
 .productos a{
@@ -233,6 +240,7 @@ footer {
 }
 
 .fotos{
+    height: auto;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -265,7 +273,57 @@ h5{
 }
 
 .fotos img{
-    width: 20vw;
+    width: 195px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+    .menu{
+        padding: 30px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.356); 
+        display: none;
+        -webkit-backdrop-filter: blur(8px);
+        backdrop-filter: blur(8px);
+        text-align: center;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+
+    #menu:checked ~ .navbar {
+        display: initial;
+    }
+
+    .productos {
+        padding-bottom: 100px;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .productos .prod {
+        margin-top: 30px;
+        height: 160vh;
+    }
+
+    .prod .fotos{
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+    }
+
 }
 
 
