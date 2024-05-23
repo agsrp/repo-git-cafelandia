@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /*border: 65px solid #1d0c04; */
+    border-left: none;
+    border-right: none;
+    background-size: cover;
+    border-bottom: none;
+    box-sizing: border-box; 
+    animation: cambiar-fondo 15s infinite;
+}
+    
+
+@keyframes cambiar-fondo {
+    0% {  background-image: url(cafelandias.jpg); }
+    25% { background-image: url(coffee-stock.jpg); }
+    55% { background-image: url(coffekis.jpg); }
+    75% { background-image: url(cropped.png); }
+    100% {background-image: url(cafelandias.jpg); } 
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto ;
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu .navbar ul li a:hover {
+    color: rgba(255, 255, 255, 0.479);
+}
+
+.logo{
+    color: #fff3ed;
+    font-size: 15px;
+    font-weight: 800;
+    font-family: 'poppins' sans-serif;
+}
+
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #fff3ed;
+    display: block;
+    font-weight: 600;
+}
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    cursor: pointer;
+    display: none;
+}
+
+.header-content {
+    padding: 5%;
+    margin-left: 1%;
+    float: left;
+}
+
+.header-content h1{
+    color: #fff3ed;
+    font-size: 30px;
+}
+
+.header-content h2{
+    padding: 0;
+    margin-top: 0;
+    color: #fff3ed;
+    font-size: 50px;
+    font-weight: 700;
+    
+}
+
+
+
+.btn1{
+    display: inline-block;
+    padding: 10px 60px;
+    border-style: solid;
+    border-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    border-width: 1px 1px;
+    color: #fff3ed;
+    text-transform: uppercase;
+    transition: background-color 0s;
+    margin-top: 10px;
+}
+
+.btn1:hover {
+    background-color: rgba(32, 12, 0, 0.733);
+}
+
+footer {
+    background-color: #160503;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: auto; 
+    width: 100%;
+}
+
+/* SECCION DE MAIN RECETAS */
+.recetas{
+    background-image: url(mike-kenneally-46284-unsplash-scaled.jpg);
+    padding: 4%;
+    font-family: 'Poppins', sans-serif; 
+    
+}
+
+
+.recipe {
+    margin-top: 10%;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: rgba(109, 63, 35, 0.356); 
+    overflow: hidden; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    box-shadow: 0 0px 25px rgba(0, 0, 0, 0.7); 
+    transition: box-shadow 0.3s ease; 
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    border-radius: 25px;
+}
+
+.recipe img {
+    border-radius: 15px;
+    width: 100%; 
+    max-height: 8cm; 
+    object-fit: cover; 
+    margin-bottom: 10px; 
+}
+.recipe h2 {
+    text-align: left;
+    color: rgb(255, 239, 233);
+    text-transform: uppercase;
+    background: linear-gradient(to right, #fff4f0, #9e4e38); 
+     -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.recipe ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    color: aliceblue;
+}
+
+.tutos {
+    margin-bottom: 5%;
+    color: rgb(255, 255, 255); 
+    text-align: center; 
+    font-family: 'Poppins', sans-serif; 
+    font-size: 50px;
+}
+
+
+/* SECCION DE MAIN PRODUCTOS */
+
+.productos{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    background-size: cover;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgb(89,57,43) 80%, rgb(72,46,35));
+}
+
+.productos h1{
+    color: #fff3ed;
+    margin-top: 8%;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5em;
+
+}
+
+.productos .prod{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.productos a{
+    font-weight: 700;
+    border-radius: 30px;
+    font-size: 0.8em;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px 60px;
+    border-style: solid;
+    border-color: rgb(216, 148, 117);
+    border-width: 1px 1px;
+    color: #fff3ed;
+} 
+
+.productos a:hover {
+    background-color:  rgba(110, 61, 21, 0.589);
+    border-color: rgb(255, 255, 255);
+}
+
+.fotos{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h5{
+    color: #edfeff;
+    font-size: 1.5em;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 2%;
+}
+
+.productos p{
+    color: #fff3ed;
+    margin-bottom: 8%;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8em;
+}
+
+.fotoytext{
+    padding: 5%;
+}
+
+.fotoytext1{
+    padding: 5%;
+}
+
+.fotoytext2{
+    padding: 5%;
+}
+
+.fotos img{
+    width: 20vw;
+}
+
+

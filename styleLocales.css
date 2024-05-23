@@ -1,0 +1,43 @@
+.mapas-text{
+    display: flex;
+    flex-wrap: wrap;
+    float: right;
+    align-items: center;
+    padding: 0%;
+    padding-left: 5%;
+    margin-top: 5%;
+}
+
+.mapas{
+    margin: 1%;
+}
+
+.video{
+    margin: 1%;
+}
+
+.redes-text{
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    display: flex;
+    margin-right: 15%;
+}
+
+.texto2{
+    padding: 5%;
+}
+
+.texto2 h3{
+    color: aliceblue;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.botonesRedes a{
+    font-size: 2em;
+    padding: 1.5vw;
+    color: aliceblue;
+}
