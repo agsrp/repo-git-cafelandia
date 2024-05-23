@@ -194,6 +194,7 @@ footer {
 /* SECCION DE MAIN PRODUCTOS */
 
 .productos{
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     display: flex;
