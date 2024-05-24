@@ -92,7 +92,8 @@ footer {
     background-size: cover;
     border-bottom: none;
     box-sizing: border-box;
-    background-color: #351f12;
+   /* background-color: #351f12; */
+   background-image: url(cafelandias.jpg);
     justify-content: center;
 }
 

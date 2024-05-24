@@ -35,11 +35,11 @@
 }
 
 .menu .navbar ul li a:hover {
-    color: rgba(255, 255, 255, 0.479);
+    color: rgba(190, 78, 33, 0.479);
 }
 
 .logo{
-    color: #fff3ed;
+    color: #b33d03;
     font-size: 15px;
     font-weight: 800;
     font-family: 'poppins' sans-serif;
@@ -53,7 +53,7 @@
 .menu .navbar ul li a{
     font-size: 18px;
     padding: 20px;
-    color: #fff3ed;
+    color: #b33d03;
     display: block;
     font-weight: 600;
 }
@@ -85,7 +85,8 @@
     background-size: cover;
     border-bottom: none;
     box-sizing: border-box;
-    background-color: #351f12;
+    background-image: url(fondo4_form.jpg);
+   /* background-color: #6dc938; */
     justify-content: center;
 }
 
@@ -148,7 +149,7 @@ form #promociones{
 }
 
 .titulo-contacto {
-    color: white;
+    color: rgb(143, 65, 20);
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
 }
