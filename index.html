@@ -1,13 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CAFELANDIA</title>
+    <link rel="icon" href="cafeicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styleLocales.css">
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+            $(document).ready(function(){
+                
+            $("a").on('click', function(event) {
+
+                if (this.hash !== "") {
+                event.preventDefault();
+
+                var hash = this.hash;
+
+                $('html, body').animate({
+                    scrollTop: $(hash).offset().top
+                }, 800, function(){
+            
+                    window.location.hash = hash;
+                });
+                }
+            });
+            });
+    </script>
+
 </head>
 <body>
+
     <header class="header">
         <i class="fa-solid fa-mug-hot"></i>
         <div class="menu container">
@@ -19,7 +44,7 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="locales.html">Encontranos</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="#">Nuestro cafe</a></li>
                 </ul>
@@ -35,6 +60,7 @@
     </header>
 
     <main id="main">
+
         <section class="productos">
 
             <h1>PRODUCTOS DESTACADOS</h1>
@@ -125,6 +151,24 @@
                 </div>
             </div>
         </section>
+
+        <section class="footer-links">
+            <h2>SEGUINOS EN NUESTRAS REDES SOCIALES</h2>
+            <div class="btnredes">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <h2>SEGUIR NAVEGANDO</h2>
+            <div class="quick-links">
+                <a href="locales.html" class="btn-link">Encontranos</a>
+                <a href="nosotros.html" class="btn-link">Nosotros</a>
+                <a href="contacto.html" class="btn-link">Contacto</a>
+                <a href="#" class="btn-link">Productos</a>
+            </div>
+        </section>
+
     </main>
 
     <footer>

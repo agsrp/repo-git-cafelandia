@@ -6,7 +6,6 @@
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-
 }
 
 .header {
@@ -105,8 +104,6 @@
     
 }
 
-
-
 .btn1{
     display: inline-block;
     padding: 10px 60px;
@@ -133,8 +130,7 @@ footer {
     width: 100%;
 }
 
-/* SECCION DE MAIN RECETAS */
-
+/* ########################## SECCION DE MAIN RECETAS ########################## */
 
 .recetas{
     background-image: url(mike-kenneally-46284-unsplash-scaled.jpg);
@@ -142,7 +138,6 @@ footer {
     font-family: 'Poppins', sans-serif; 
     
 }
-
 
 .recipe {
     margin-top: 10%;
@@ -172,7 +167,7 @@ footer {
     color: rgb(255, 239, 233);
     text-transform: uppercase;
     background: linear-gradient(to right, #fff4f0, #9e4e38); 
-     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 .recipe ul {
@@ -190,10 +185,10 @@ footer {
     font-size: 50px;
 }
 
-
-/* SECCION DE MAIN PRODUCTOS */
+/* ########################## SECCION DE MAIN PRODUCTOS ########################## */
 
 .productos{
+    scroll-behavior: smooth;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -223,7 +218,7 @@ footer {
     height: 80vh;
 }
 
-.productos a{
+.productos .prod .fotos a{
     font-weight: 700;
     border-radius: 30px;
     font-size: 0.8em;
@@ -277,7 +272,55 @@ h5{
     width: 195px;
 }
 
-/* RESPONSIVE */
+/* ########################## SECCION DE REDES INDEX ########################## */
+
+.footer-links {
+    flex-direction: column;
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 100px;
+    background-color: #482e23;
+    background-image: linear-gradient(to bottom, rgba(72, 46, 35, 1), transparent), url('cafe4.jpg');
+    
+}
+
+.footer-links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+}
+
+.btnredes{
+    justify-content: center;
+    display: flex;
+    padding-bottom: 20px;
+}
+
+.btnredes a{
+    font-size: 2em;
+    padding: 1.5vw;
+    color: aliceblue;
+}
+
+.footer-links .quick-links{
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links .quick-links a{
+    color: #ffffff;
+    margin: 5px;
+    width: 150px;
+    background-color: #9e4e38;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+/* ########################## RESPONSIVE ########################## */
 
 @media(max-width:768px){
     .menu{
@@ -289,6 +332,7 @@ h5{
     }
 
     .menu .navbar{
+        z-index: 1;
         position: absolute;
         top: 100%;
         left: 0;
@@ -308,15 +352,17 @@ h5{
         display: initial;
     }
 
+    .productos h1{
+        padding-bottom: 50px;
+    }
+
     .productos {
-        padding-bottom: 100px;
-        height: auto;
+        height: 180vh;
         flex-direction: column;
     }
 
     .productos .prod {
-        margin-top: 30px;
-        height: 160vh;
+        height: 120vh;
     }
 
     .prod .fotos{

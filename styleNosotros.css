@@ -8,6 +8,12 @@
     list-style: none;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(197, 197, 15, 0.452); 
+}
+
 .header {
     font-family: 'Poppins', sans-serif;
     display: flex;
@@ -17,9 +23,11 @@
     background-size: cover;
     border-bottom: none;
     box-sizing: border-box;
+    background-color: #482e23;
+    height: 10vh;
 }
 
-.container {
+.container1 {
     max-width: 1200px;
     margin: 0 auto ;
 }
@@ -80,54 +88,73 @@ footer {
     width: 100%;
 }
 
-.containermaparedes{
-    padding-top: 100px;
-    padding-bottom: 50px;
+.textoeimagenes{
     font-family: 'Poppins', sans-serif;
-    min-height: 100vh;
+    padding: 50px;
     display: flex;
-    align-items: center;
-    border-left: none;
-    border-right: none;
-    background-size: cover;
-    border-bottom: none;
-    box-sizing: border-box;
-    background-color: #351f12;
-    justify-content: center;
-}
-
-
-.mapasyredes{
-    display: flex;
-    justify-content: space-between;
-    width: 150vw;
-    align-items: center;
-}
-
-.mapas-text{
-    flex-direction: column;
-    display: flex;
-    flex-wrap: wrap;
-    float: left;
-    align-items: center;
-    padding: 2%;
-}
-
-.mapas{
-    margin: 1%;
-}
-
-.video{
-    margin: 1%;
-}
-
-.redes-text{
-    flex-wrap: wrap;
-    justify-content: center;
     text-align: center;
-    float: right;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+.textoeimagenes h6{
+    font-family: 'Poppins', sans-serif;
+    font-size: 30px;
+    font-weight: 800;
+    padding: 0;
+    padding-bottom: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 20px;
+}
+
+.imagen-derecha {
+    float: right; 
+    margin-left: 20px;
+}
+.content {
+    text-align: center; 
+}
+
+.product-info {
     display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.product-info.reverse {
+    flex-direction: row-reverse; 
+}
+
+.product-info img {
+    width: 400px; 
+    height: 400px; 
+    margin-right: 20px; 
+}
+
+.product-info p {
+    margin-left: 20px; 
+}
+.redesybotones{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 6rem 0;
+    background-color: #482e23;
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.redesybotones .redes-text{
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
 }
 
 .texto2{
@@ -148,6 +175,10 @@ footer {
 
 
 @media(max-width:768px){
+
+    .header{
+        height: 9vh;
+    }
 
     .menu{
         padding: 30px;
@@ -183,9 +214,35 @@ footer {
         flex-direction: column;
     }
 
-    .redes-text{
-        padding: 3%;
-        padding-top: 100px;
-        padding-bottom: 100px;
+    .product-info.reverse{
+        text-align: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .product-info img {
+        margin-right: 0; 
+        margin-bottom: 30px;
+    }
+
+    .imagen-derecha{
+        margin-left: 0;
+    }
+    
+    .product-info p {
+        margin-left: 0; 
+    }
+
+    .container {
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin: 0;
+    }
+
+    .container img{
+        width: 60vw;
+        height: auto;
     }
 }

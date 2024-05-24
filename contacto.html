@@ -2,73 +2,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-      
-
-        .container1 {
-            margin-top: 6.5%;
-            position: absolute;
-            top: 43%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-    
-        form {
-            padding: 25px;
-            color: aliceblue;
-        }
-
-        form label {
-            display: block;
-            margin-bottom: 13px;
-        }
-
-        form input[type="text"],
-        form input[type="email"],
-        form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 10px;
-            border: 1px solid #805543;
-            border-radius: 20px;
-            box-sizing: border-box;
-            background-color: #fdfdfd;
-        }
-
-        form input[type="submit"] {
-            width: 100%;
-            padding: 10px;
-            background-color:#eed7bd;
-            color: rgb(0, 0, 0);
-            cursor: pointer;
-            font-weight: 600;
-            border: 1px solid #351f12;
-            border-radius: 30px;
-        }
-
-        form input[type="submit"]:hover {
-            background-color: #fff1e8; 
-        }
-
-        footer {
-            background-color: #160503;
-            color: white;
-            text-align: center;
-            padding: 12px;
-            margin-top: auto; 
-            width: 100%;
-        }
-
-        .titulo-contacto {
-            color:#a16741;
-            font-family: 'poppins';
-            font-weight: 100;
-        }
-    </style>
+    <title>CONTACTO</title>
+    <link rel="icon" href="cafeicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styleContacto.css">
 </head>
 <body>
     <header class="header">
@@ -81,41 +17,46 @@
             <nav class="navbar">
                 <ul>
                     <li><a href="locales.html">Encontranos</a></li>
-                    <li><a href="#">Nosotros</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
                     <li><a href="contacto.html">Contacto</a></li>
                     <li><a href="#">Nuestro cafe</a></li>
                 </ul>
             </nav>
         </div>
 
-        <div class="container1">
-            <h1 class="titulo-contacto">¡CONTACTANOS!</h1>
-
-            <form action="show_data.html" target="_black">
-
-                <label for="nom"></label>
-                <input type="text" placeholder="Nombre" name="nom">
-                
-                <label for="ape"></label>
-                <input type="text" placeholder="Apellido" name="ape">
-                
-                <label for="celu"></label>
-                <input type="text" placeholder="Teléfono de contacto" name="celu">
-                
-                <label for="correo"></label>
-                <input type="email" placeholder="Correo electrónico" name="correo">
-                
-                <label for="consulta"></label>
-                <textarea placeholder="Ingrese su consulta si usted lo desea" name="consulta" cols="35" rows="3"></textarea>
-
-                <label for="promociones" style="color: black;">Deseo recibir información sobre promociones y ofertas</label>
-                <input type="checkbox" id="promociones" name="promociones">
-                
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-
     </header>
+ 
+    <main>
+        <section class="contact">
+
+            <div class="container1">
+                <h1 class="titulo-contacto">¡CONTACTANOS!</h1>
+    
+                <form action="show_data.html" target="_black">
+    
+                    <label for="nom"></label>
+                    <input type="text" placeholder="Nombre" name="nom">
+                    
+                    <label for="ape"></label>
+                    <input type="text" placeholder="Apellido" name="ape">
+                    
+                    <label for="celu"></label>
+                    <input type="text" placeholder="Teléfono de contacto" name="celu">
+                    
+                    <label for="correo"></label>
+                    <input type="email" placeholder="Correo electrónico" name="correo">
+                    
+                    <label for="consulta"></label>
+                    <textarea placeholder="Ingrese su consulta si usted lo desea" name="consulta" cols="35" rows="3"></textarea>
+    
+                    <label for="promociones" style="color: black;">Deseo recibir información sobre promociones y ofertas</label>
+                    <input type="checkbox" id="promociones" name="promociones">
+                    
+                    <input type="submit" value="Enviar">
+                </form>
+            </div>
+        </section>
+    </main>
 
     <footer>
        <p>Derechos reservados @2024</p>
