@@ -8,31 +8,40 @@
     list-style: none;
 }
 
+a{
+    text-decoration: none;
+}
+
+body{
+    border-bottom: none;
+    text-decoration: none;
+}
+
 .header {
     font-family: 'Poppins', sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
-    /*border: 65px solid #1d0c04; */
     border-left: none;
     border-right: none;
     background-size: cover;
     border-bottom: none;
     box-sizing: border-box; 
     animation: cambiar-fondo 15s infinite;
+    scroll-behavior: smooth;
 }
     
 
 @keyframes cambiar-fondo {
-    0% {  background-image: url(cafelandias.jpg); }
-    25% { background-image: url(coffee-stock.jpg); }
-    55% { background-image: url(coffekis.jpg); }
-    75% { background-image: url(cropped.png); }
-    100% {background-image: url(cafelandias.jpg); } 
+    0% {  background-image: url(../img/cafelandias.jpg); }
+    25% { background-image: url(../img/coffee-stock.jpg); }
+    55% { background-image: url(../img/coffekis.jpg); }
+    75% { background-image: url(../img/cropped.png); }
+    100% {background-image: url(../img/cafelandias.jpg); } 
 }
 
 
-.container {
+.container1 {
     max-width: 1200px;
     margin: 0 auto ;
 }
@@ -133,7 +142,7 @@ footer {
 /* ########################## SECCION DE MAIN RECETAS ########################## */
 
 .recetas{
-    background-image: url(mike-kenneally-46284-unsplash-scaled.jpg);
+    background-image: url(../img/recetasbk.jpg);
     padding: 4%;
     font-family: 'Poppins', sans-serif; 
     
@@ -187,101 +196,119 @@ footer {
 
 /* ########################## SECCION DE MAIN PRODUCTOS ########################## */
 
-.productos{
-    scroll-behavior: smooth;
+.productosDestacados {
+    font-family: 'Poppins', sans-serif;
+	background-color: #482e23;
+	width: 100%;
+	height: 130vh;
+	display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
-    background-size: cover;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+	align-items: center;
+    text-decoration: none;
+}
+
+.vermas2{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 50px;
+    background-color: #9e4e38;
+    padding: 15px;
+    border-radius: 30px;
+}
+
+.vermas2:hover{
+    background-color: orangered;
+}
+
+
+.head_text {
+    margin-top: 100px;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+	font-size: 45px;
+}
+
+.card_box {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+	background: #ffffff;
+	border-radius: 8px;
+	margin-top: 40px;
+	transition: .3s;
+	margin-bottom: 40px;
+}
+
+.card_box:hover {
+	box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.05);
+	transform: translateY(-10px);
+}
+
+.card_text {
+	padding: 30px 20px 25px 20px;
+}
+
+.card_text h4 {
+	font-size: 18px;
+	font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+	color: #0A0A0A;
+}
+
+.card_text a {
+	 font-size: 12px;
+	 line-height: 150%;
+	 margin-top: 20px;
+     padding: 8px;
+     border-radius: 30px;
+     background-color: burlywood;
+	 color: #ffffff;
+     text-decoration: none;
+}
+
+.card_text a:hover{
     background-color: #9e4e38;
 }
 
-.productos h1{
-    color: #fff3ed;
-    margin-top: 8%;
-    text-align: center;
-    font-family: 'Poppins', sans-serif;
-    font-size: 2.5em;
-
+.slider_carousel .owl-nav {
+	 position: absolute;
+	 top: 50%;
+	 width: 100%;
 }
 
-.productos .prod{
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
+.slider_carousel .owl-prev, .slider_carousel .owl-next {
+	width: 40px;
+	height: 40px;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 50%;
+	position: absolute;
+	top: 50%;
 }
 
-.productos .prod .fotos a{
-    font-weight: 700;
-    border-radius: 30px;
-    font-size: 0.8em;
-    font-family: 'Poppins', sans-serif;
-    padding: 10px 60px;
-    border-style: solid;
-    border-color: rgb(216, 148, 117);
-    border-width: 1px 1px;
-    color: #fff3ed;
-} 
-
-.productos a:hover {
-    background-color:  rgba(110, 61, 21, 0.589);
-    border-color: rgb(255, 255, 255);
+.slider_carousel .owl-next {
+    right: -50px;
 }
 
-.fotos{
-    height: auto;
-    display: flex;
-    justify-content: center;
-    text-align: center;
-}
-
-h5{
-    color: #edfeff;
-    font-size: 1.5em;
-    font-family: 'Poppins', sans-serif;
-    margin-top: 2%;
-}
-
-.productos p{
-    color: #fff3ed;
-    margin-bottom: 8%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 0.8em;
-}
-
-.fotoytext{
-    padding: 5%;
-}
-
-.fotoytext1{
-    padding: 5%;
-}
-
-.fotoytext2{
-    padding: 5%;
-}
-
-.fotos img{
-    width: 195px;
+.slider_carousel .owl-prev {
+    left: -50px;
 }
 
 /* ########################## SECCION DE REDES INDEX ########################## */
 
 .footer-links {
+    text-decoration: none;
     flex-direction: column;
     display: flex;
     font-family: 'Poppins', sans-serif;
     text-align: center;
     padding: 100px;
     background-color: #482e23;
-    background-image: linear-gradient(to bottom, rgba(72, 46, 35, 1), transparent), url('cafe4.jpg');
+    background-image: linear-gradient(to bottom, rgba(72, 46, 35, 1), transparent), url('../img/cafe4.jpg');
     
 }
 
@@ -352,23 +379,20 @@ h5{
         display: initial;
     }
 
-    .productos h1{
-        padding-bottom: 50px;
+    .productosDestacados{
+        height: 110vh;
     }
 
-    .productos {
-        height: 180vh;
-        flex-direction: column;
+    .card_box{
+        margin: 30px;
     }
 
-    .productos .prod {
-        height: 120vh;
+    .slider_carousel .owl-next {
+        display: none;
     }
-
-    .prod .fotos{
-        align-items: center;
-        text-align: center;
-        flex-direction: column;
+    
+    .slider_carousel .owl-prev {
+        display: none;
     }
 
 }

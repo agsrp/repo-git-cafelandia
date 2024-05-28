@@ -35,11 +35,11 @@
 }
 
 .menu .navbar ul li a:hover {
-    color: rgba(190, 78, 33, 0.479);
+    color: rgba(255, 255, 255, 0.479);
 }
 
 .logo{
-    color: #b33d03;
+    color: #fff3ed;
     font-size: 15px;
     font-weight: 800;
     font-family: 'poppins' sans-serif;
@@ -53,7 +53,7 @@
 .menu .navbar ul li a{
     font-size: 18px;
     padding: 20px;
-    color: #b33d03;
+    color: #fff3ed;
     display: block;
     font-weight: 600;
 }
@@ -71,9 +71,16 @@
     display: none;
 }
 
+footer {
+    background-color: #160503;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: auto; 
+    width: 100%;
+}
 
-
-.contact{
+.containermaparedes{
     padding-top: 100px;
     padding-bottom: 50px;
     font-family: 'Poppins', sans-serif;
@@ -85,77 +92,64 @@
     background-size: cover;
     border-bottom: none;
     box-sizing: border-box;
-    background-image: url(fondo4_form.jpg);
-   /* background-color: #6dc938; */
+   /* background-color: #351f12; */
+   background-image: url(../img/cafelandias.jpg);
     justify-content: center;
 }
 
-.container1 {
+
+.mapasyredes{
     display: flex;
+    justify-content: space-between;
+    width: 150vw;
+    align-items: center;
+}
+
+.mapas-text{
     flex-direction: column;
-    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    float: left;
+    align-items: center;
+    padding: 2%;
+}
+
+.mapas{
+    margin: 1%;
+}
+
+.video{
+    margin: 1%;
+}
+
+.redes-text{
+    flex-wrap: wrap;
+    justify-content: center;
     text-align: center;
+    float: right;
+    align-items: center;
+    display: flex;
 }
 
-form {
-    padding: 25px;
-    color: aliceblue;
-}
-
-form label {
-    display: block;
-    margin-bottom: 13px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #805543;
-    border-radius: 20px;
-    box-sizing: border-box;
-    background-color: #fdfdfd;
-}
-
-form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    background-color:#eed7bd;
-    color: rgb(0, 0, 0);
-    cursor: pointer;
-    font-weight: 600;
-    border: 1px solid #351f12;
-    border-radius: 30px;
-}
-
-form input[type="submit"]:hover {
-    background-color: #fff1e8; 
-}
-
-footer {
-    background-color: #160503;
-    color: white;
-    text-align: center;
-    padding: 12px;
-    margin-top: auto; 
-    width: 100%;
-}
-
-form #promociones{
-    margin-bottom: 20px;
+.texto2{
     padding: 5%;
 }
 
-.titulo-contacto {
-    color: rgb(143, 65, 20);
-    font-family: 'Poppins', sans-serif;
+.texto2 h3{
+    color: aliceblue;
+    font-size: 2.5em;
     font-weight: 700;
+}
+
+.botonesRedes a{
+    font-size: 2em;
+    padding: 1.5vw;
+    color: aliceblue;
 }
 
 
 @media(max-width:768px){
+
     .menu{
         padding: 30px;
     }
@@ -183,5 +177,16 @@ form #promociones{
 
     #menu:checked ~ .navbar {
         display: initial;
+    }
+
+    .mapasyredes{
+        padding-top: 150px;
+        flex-direction: column;
+    }
+
+    .redes-text{
+        padding: 3%;
+        padding-top: 100px;
+        padding-bottom: 100px;
     }
 }

@@ -5,10 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CAFELANDIA</title>
-    <link rel="icon" href="cafeicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/cafeicon.ico" type="image/x-icon">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/fontawesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl.carousel.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
     <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
     <script>
             $(document).ready(function(){
                 
@@ -39,7 +43,7 @@
             <a href="index.html" class="logo" >CAFELANDIA</a>
             <input type="checkbox" id="menu" />
             <label for="menu">
-                <img src="menu.png" class="menu-icono" alt="">
+                <img src="img/menu.png" class="menu-icono" alt="">
             </label>
             <nav class="navbar">
                 <ul>
@@ -51,7 +55,7 @@
             </nav>
         </div>
 
-        <div class="header-content container">
+        <div class="header-content container1">
             <h1>Tu cafe preferido</h1> 
             <h2>SIEMPRE EN CASA</h2>
 
@@ -62,32 +66,77 @@
     <main id="main">
 
         <section class="productos">
-
-            <h1>PRODUCTOS DESTACADOS</h1>
-
-            <div class="prod">
-
-                <div class="fotos">
-                    <div class="fotoytext">
-                        <img src="cafepaquete.jpg" alt="">
-                        <h5>Cafe Tostado</h5>
-                        <p>Origen Perú</p>
-                        <a href="#">COMPRAR</a>
-                    </div>
-                    <div class="fotoytext1">
-                        <img src="cafepaquete.jpg" alt="">
-                        <h5>Cafe Tostado</h5>
-                        <p>Origen Bolivia</p>
-                        <a href="#">COMPRAR</a>
-                    </div>
-                    <div class="fotoytext2">
-                        <img src="cafepaquete.jpg" alt="">
-                        <h5>Cafe Tostado</h5>
-                        <p>Origen Colombia</p>
-                        <a href="#">COMPRAR</a>
+            <div class="productosDestacados">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <h2 class="head_text">PRODUCTOS DESTACADOS</h2>
+                        </div>
+                        <div class="col-12">
+                            <div class="owl-carousel slider_carousel">
+                                <div class="card_box">
+                                    <img class=" rounded-top img-fluid w-100" src="img/sld1.webp" alt="">
+                                    <div class="card_text">
+                                        <h4>CAFE TOSTADO</h4>
+                                        <a href="" class="vermas">COMPRAR</a>
+                                    </div>
+                                </div>
+                                <div class="card_box">
+                                    <img class="rounded-top img-fluid w-100" src="img/sld6.webp" alt="">
+                                    <div class="card_text">
+                                        <h4>CAFE TOSTADO</h4>
+                                        <a href="" class="vermas">COMPRAR</a>
+                                    </div>
+                                </div>
+                                <div class="card_box">
+                                    <img class="rounded-top img-fluid w-100" src="img/sld2.webp" alt="">
+                                    <div class="card_text">
+                                        <h4>CAFE TOSTADO</h4>
+                                        <a href="" class="vermas">COMPRAR</a>
+                                    </div>
+                                </div>
+                                <div class="card_box">
+                                    <img class="rounded-top img-fluid w-100" src="img/sld4.webp" alt="">
+                                    <div class="card_text">
+                                        <h4>CAFE TOSTADO</h4>
+                                        <a href="" class="vermas">COMPRAR</a>
+                                    </div>
+                                </div>
+                                <div class="card_box">
+                                    <img class="rounded-top img-fluid w-100" src="img/sld1.webp" alt="">
+                                    <div class="card_text">
+                                        <h4>CAFE TOSTADO</h4>
+                                        <a href="" class="vermas">COMPRAR</a>
+                                    </div>
+                                </div>
+                                <div class="card_box">
+                                    <img class=" rounded-top img-fluid w-100" src="img/sld6.webp" alt="">
+                                    <div class="card_text">
+                                        <h4>CAFE TOSTADO</h4>
+                                        <a href="" class="vermas">COMPRAR</a>
+                                    </div>
+                                </div>
+                                <div class="card_box">
+                                    <img class="rounded-top img-fluid w-100" src="img/sld2.webp" alt="">
+                                    <div class="card_text">
+                                        <h4>CAFE TOSTADO</h4>
+                                        <a href="" class="vermas">COMPRAR</a>
+                                    </div>
+                                </div>
+                                <div class="card_box">
+                                    <img class="rounded-top img-fluid w-100" src="img/sld4.webp" alt="">
+                                    <div class="card_text">
+                                        <h4>CAFE TOSTADO</h4>
+                                        <a href="" class="vermas">COMPRAR</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
+                <a href="" class="vermas2">VER MAS PRODUCTOS</a>
             </div>
+            
         </section>
 
         <section class="recetas">
@@ -95,7 +144,7 @@
             <h1 class="tutos">TUTORIALES</h1>
             
             <div class="recipe">
-                <img src="espresso.JPG" alt="Espresso">
+                <img src="img/espresso.JPG" alt="Espresso">
                 <div>
                     <h2>Paso a paso</h2>
                     <ul>
@@ -109,7 +158,7 @@
             </div>
 
             <div class="recipe">
-                <img src="aeropress.JPG" alt="aeropress">
+                <img src="img/aeropress.JPG" alt="aeropress">
                 <div>
                     <h2>Paso a paso</h2>
                     <ul>
@@ -127,7 +176,7 @@
             </div>
 
             <div class="recipe">
-                <img src="prensa.JPG" alt="Prensa Francesa">
+                <img src="img/prensa.JPG" alt="Prensa Francesa">
                 <div>
                     <h2>Paso a paso</h2>
                     <ul>
@@ -145,7 +194,7 @@
             </div>
 
             <div class="recipe">
-                <img src="mokka.JPG" alt="Café Moka">
+                <img src="img/mokka.JPG" alt="Café Moka">
                 <div>
                     <h2>Paso a paso</h2>
                     <ul>
@@ -184,6 +233,43 @@
     <footer>
         <p>Derechos reservados @2024</p>
      </footer>
+
+     <!-- INICIO DE SCRIPS DEL CARRUSEL -->
+
+     <script src="js/jquery-3.4.1.min.js"></script>
+     <script src="js/bootstrap.min.js"></script>
+     <script src="js/owl.carousel.min.js"></script>
+     <script>
+         
+         function slider_carouselInit() {
+             $('.owl-carousel.slider_carousel').owlCarousel({
+                 dots: false,
+                 loop: true,
+                 margin: 30,
+                 stagePadding: 2,
+                 autoplay: false,
+                 nav: true,
+                 navText: ["<i class='far fa-arrow-alt-circle-left'></i>","<i class='far fa-arrow-alt-circle-right'></i>"],
+                 autoplayTimeout: 4000,
+                 autoplayHoverPause: true,
+                 responsive: {
+                     0: {
+                         items: 1
+                     },
+                     768: {
+                         items: 2,
+                     },
+                     992: {
+                         items: 5
+                     }
+                 }
+             });
+         }
+         slider_carouselInit();
+ 
+     </script>
+
+      <!-- CIERRE DE SCRIPS DEL CARRUSEL -->
     
 
 </body>
