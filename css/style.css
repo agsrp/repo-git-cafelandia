@@ -172,6 +172,8 @@ footer {
     margin-bottom: 10px; 
 }
 .recipe h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
     text-align: left;
     color: rgb(255, 239, 233);
     text-transform: uppercase;
@@ -187,10 +189,11 @@ footer {
 }
 
 .tutos {
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     color: rgb(255, 255, 255); 
     text-align: center; 
     font-family: 'Poppins', sans-serif; 
+    font-weight: 700;
     font-size: 50px;
 }
 
