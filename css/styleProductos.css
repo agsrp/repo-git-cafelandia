@@ -12,3 +12,9 @@ header nav .navbar-brand {
 header nav .navbar-collapse .navbar-nav{
     font-weight: 600;
 }
+
+.carouselTienda{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
