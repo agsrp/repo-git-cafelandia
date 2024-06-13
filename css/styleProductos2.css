@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@200;300;400;500;600;700;800;900&display=swap');
+
+body{
+    background-image: url('../img/recetasbk.jpg'); 
+  
+
+   
+
+header nav .navbar-brand {
+    font-size: 15px;
+    font-weight: 800;
+}
+
+header nav .navbar-collapse .navbar-nav{
+    font-weight: 600;
+
+}
+
+
+
