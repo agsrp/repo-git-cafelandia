@@ -31,19 +31,22 @@ header nav .navbar-collapse .navbar-nav{
 }
 
 .title {
-    color: rgb(236, 222, 192);
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 24px;
-    padding-top: 50px;  
+  text-align: center;
+  font-weight: bold;
+  color: rgb(236, 222, 192);
+  text-transform: uppercase;
+  
+  padding-top: 50px;  
   }
-  .carousel-item2 img {
+
+.carousel-item2 img {
     height: 250px;
     margin: auto;
     object-fit: cover;
     border-radius: 10px;
   }
-  .producto {
+
+.producto {
     margin-top: 70px;   
     padding: 10px;
     margin-bottom: 20px;
@@ -141,6 +144,194 @@ display: none;
     background-color: #d8b389;
     color: #ffffff; 
     transform: scale(1.1);
+}
+
+/* ################################ SECCION DE CATALOGO ################################ */
+
+.catalogoProductos {
+  font-family: poppins;
+  font-size: 18px;
+  text-align: center;
+  background-color: #d1bc8a;
+  align-items: center;
+  margin: 0; 
+  padding: 0; 
+  padding-bottom: 70px;
+}
+
+.catalogoProductos h1{
+  padding-top: 60px;
+  text-align: center;
+  font-weight: bold;
+  color: #8B4513;
+}
+
+.container img {
+  width: 250px;
+  border-radius: 20px;
+  justify-content: center;
+  padding: 10px;
+
+}
+
+
+.card-text{
+  font-weight: bold;
+}
+
+.btn-primary {
+  border-radius: 10px;
+  background-color: #b17c54;
+  border-color: black;
+}
+.btn-secondary{
+  border-radius: 10px;
+  background-color: #b17c54;
+  border-color: black;  
+}
+
+.cafes {
+  text-align: center;
+}
+.btn-info{
+  margin-top: 20px;
+  background-color: #b17c54;
+  border-color: black;
+  border-radius: 10px;
+  
+}
+
+.card-body{
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+}
+.card-title {
+  color: #8B4513;
+  font-weight: bold;
+  width:100%;
+}
+
+.productos {
+  margin-bottom: 10px;
+  height: 80px;
+}
+
+.image-gallery {
+  display: none;
+
+}
+
+.image-gallery img {
+  width: 75%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.image-gallery img:hover {
+  transform: scale(1.2);
+  z-index: 1000;
+}
+
+.image-gallery.active {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ################################ SECCION DE REDES ################################ */
+
+.footer-links {
+  text-decoration: none;
+  flex-direction: column;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  padding: 100px;
+  background-color: #4d3b27;
+  background-image: linear-gradient(to bottom, rgba(72, 46, 35, 1), transparent), url('../img/cafe4.jpg');
+  
+}
+
+.footer-links h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #ffffff;
+}
+
+.btnredes{
+  justify-content: center;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.btnredes a{
+  font-size: 2em;
+  padding: 1.5vw;
+  color: aliceblue;
+}
+
+.footer-links .quick-links{
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-links .quick-links a{
+  text-decoration: none;
+  color: #ffffff;
+  margin: 5px;
+  width: 150px;
+  background-color: #9e4e38;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+/* ################################ SECCION DE FOOTER ################################ */
+
+footer {
+  background-color: #160503;
+  color: white;
+  text-align: center;
+  padding: 10PX;
+  width: 100%;
+}
+
+/* ################################ SECCION DE RESPONSIVE ################################ */
+
+@media (min-width: 576px) {
+  
+  .container {
+      padding: 0 15px; 
+  }
+
+  .btn-primary, .btn-secondary {
+      font-size: 16px; 
+  }
+
+  .cafes {
+      margin-top: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cafes {
+      text-align: justify; 
+  }
+}
+
+.btn-info {
+  margin-top: 20px;
+  background-color: #b17c54;
+  border-color: black;
+  border-radius: 10px;
+}
+
+.card-title {
+  color: #8B4513;
+  font-weight: bold;
 }
 
 @media screen and (max-width: 768px) {

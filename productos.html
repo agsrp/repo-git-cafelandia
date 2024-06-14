@@ -8,6 +8,8 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/styleProductos.css">
+    <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 
@@ -199,7 +201,196 @@
             </div>
         </section>
 
+        <section class="catalogoProductos">
+            <h1>NUESTROS PRODUCTOS</h1>
+            <div class="productos">
+
+                <div class="text-center mt-3">
+                    <select id="sortOptions" class="btn btn-info">
+                        <option value="">Ordenar</option>
+                        <option value="asc">Menor a Mayor precio</option>
+                        <option value="desc">Mayor a Menor precio</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <div id="gallery1" class="image-gallery active row">
+
+                    <div class="col-md-4 mb-4" data-price="3500">
+                        <img src="img/latte.jpeg" alt="Image 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Azteca</h5>
+                            <p class="card-text">Precio: $3500</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4" data-price="2900">
+                        <img src="img/azteca2.jpeg" alt="Image 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Azteca Tostado</h5>
+                            <p class="card-text">Precio: $2900</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4" data-price="3200">
+                        <img src="img/boliviano.jpeg" alt="Image 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafe Boliviano</h5>
+                            <p class="card-text">Precio: $3200</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-price="4500">
+                        <img src="img/boliviano2.jpeg" alt="Image 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Moka</h5>
+                            <p class="card-text">Precio: $4500</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-price="4999">
+                        <img src="img/italiano2.jpeg" alt="Image 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Italiano</h5>
+                            <p class="card-text">Precio: $4999</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-price="3700">
+                        <img src="img/colombiano1.jpeg" alt="Image 6">
+                        <div class="card-body">
+                            <h5 class="card-title">Colombiano</h5>
+                            <p class="card-text">Precio: $3700</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="gallery2" class="image-gallery row">
+                    <div class="col-md-4 mb-4" data-price="12000">
+                        <img src="img/WhatsApp Image 2024-06-06 at 11.33.22 PM.jpeg" alt="Image 7">
+                        <div class="card-body">
+                            <h5 class="card-title">Capsula 1</h5>
+                            <p class="card-text">Precio: $12000</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-price="13000">
+                        <img src="img/WhatsApp Image 2024-06-06 at 11.40.38 PM.jpeg" alt="Image 8">
+                        <div class="card-body">
+                            <h5 class="card-title">Capsula 2</h5>
+                            <p class="card-text">Precio: $13000</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-price="13500">
+                        <img src="img/WhatsApp Image 2024-06-06 at 11.47.41 PM.jpeg" alt="Image 9">
+                        <div class="card-body">
+                            <h5 class="card-title">Moka</h5>
+                            <p class="card-text">Precio: $13500</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-price="25000">
+                        <img src="img/cafetera1.jpeg" alt="Image 10">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafetera Cromo</h5>
+                            <p class="card-text">Precio: $25000</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-price="29000">
+                        <img src="img/cafeterarosegold.jpeg" alt="Image 11">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafetera Rose</h5>
+                            <p class="card-text">Precio: $29000</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4" data-price="50900">
+                        <img src="img/cafetera3.jpeg" alt="Image 12">
+                        <div class="card-body">
+                            <h5 class="card-title">Cafetera Premium</h5>
+                            <p class="card-text">Precio: $50900</p>
+                            <a href="#" class="btn btn-primary"> Comprar</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-3">
+                <button id="showGallery1" class="btn btn-primary">1</button>
+                <button id="showGallery2" class="btn btn-secondary">2</button>
+            </div>
+
+
+            </div>
+        </section>
+
+        <section class="footer-links">
+            <h2>SEGUINOS EN NUESTRAS REDES SOCIALES</h2>
+            <div class="btnredes">
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </div>
+            <h2>SEGUIR NAVEGANDO</h2>
+            <div class="quick-links">
+                <a href="locales.html" class="btn-link">Encontranos</a>
+                <a href="nosotros.html" class="btn-link">Nosotros</a>
+                <a href="contacto.html" class="btn-link">Contacto</a>
+                <a href="productos.html" class="btn-link">Productos</a>
+            </div>
+        </section>
+
     </main>
+
+    <footer>
+        <p>Derechos reservados @2024</p>
+     </footer>
+
+    <script>
+        document.getElementById('showGallery1').addEventListener('click', function () {
+            document.getElementById('gallery1').classList.add('active');
+            document.getElementById('gallery2').classList.remove('active');
+        });
+
+        document.getElementById('showGallery2').addEventListener('click', function () {
+            document.getElementById('gallery2').classList.add('active');
+            document.getElementById('gallery1').classList.remove('active');
+        });
+
+        document.getElementById('sortOptions').addEventListener('change', function () {
+            sortGallery(this.value);
+        });
+
+        function sortGallery(order) {
+            let gallery1 = document.getElementById('gallery1');
+            let gallery2 = document.getElementById('gallery2');
+
+            let items1 = Array.from(gallery1.getElementsByClassName('col-md-4'));
+            let items2 = Array.from(gallery2.getElementsByClassName('col-md-4'));
+
+            items1.sort((a, b) => {
+                let priceA = parseInt(a.getAttribute('data-price'));
+                let priceB = parseInt(b.getAttribute('data-price'));
+                return (order === 'asc') ? priceA - priceB : priceB - priceA;
+            });
+
+            items2.sort((a, b) => {
+                let priceA = parseInt(a.getAttribute('data-price'));
+                let priceB = parseInt(b.getAttribute('data-price'));
+                return (order === 'asc') ? priceA - priceB : priceB - priceA;
+            });
+
+            items1.forEach(item => gallery1.appendChild(item));
+            items2.forEach(item => gallery2.appendChild(item));
+        }
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
