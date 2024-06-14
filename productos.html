@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/styleProductos.css">
 </head>
 <body>
+
     <header>
 
         <nav class="navbar navbar-expand-lg bg-body-tertiary d-flex bg-warning-subtle" data-bs-theme="dark">
@@ -46,47 +47,162 @@
           </nav>
 
     </header>
-    <main> 
-      <section class="carouselTienda">
-        <div class="containerC">
-            <div id="indicadorescarousel" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#indicadorescarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#indicadorescarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    
-                </div>
-    
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="img/carousel1.webp" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="img/carousel2.webp" class="d-block w-100" alt="...">
-                    </div>
-                    
-                </div>
-    
-                <button class="carousel-control-prev" type="button" data-bs-target="#indicadorescarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#indicadorescarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section>
-    
 
+    <main> 
+
+        <section class="carouselTienda">
+            <div class="containerC">
+                <div id="indicadorescarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#indicadorescarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#indicadorescarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    </div>
+        
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="img/carousel1.webp" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="img/carousel2.webp" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+        
+                    <button class="carousel-control-prev" type="button" data-bs-target="#indicadorescarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#indicadorescarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="lineas-productos">
+            <div class="container text-center my-5">
+                <div class="row">
+                    <div class="col">
+                        <div class="btn-group d-flex flex-wrap justify-content-center" role="group" aria-label="Líneas de productos">
+                            <button type="button" class="btn btn-outline-secondary">LINEA PREMIUM</button>
+                            <button type="button" class="btn btn-outline-secondary">LINEA ESPECIAL</button>
+                            <button type="button" class="btn btn-outline-secondary">LINEA ESTANDAR</button>
+                            <button type="button" class="btn btn-outline-secondary">CAPSULAS</button>
+                            <button type="button" class="btn btn-outline-secondary">CAFETERAS</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="productosDestacados">
+            <h1 class="title">Productos Destacados</h1>
+            <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                    <ol class="indicador">
+                        <li data-bs-target="#carousel" data-bs-slide-to="0" class="active"></li>
+                        <li data-bs-target="#carousel" data-bs-slide-to="1"></li>
+                    </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item carousel-item2 active">
+                    <div class="row">
+                        <div class="col">
+                            <div class="producto">
+                                <img src="img/azteca.jpeg" class="d-block w-100" alt="...">
+                                <div class="caption">
+                                    <h6>Cafe Azteca $21.990</h6>
+                                    <button class="btn btn-comprar">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="producto">
+                                <img src="img/colombiano2.jpeg" class="d-block w-100" alt="...">
+                                <div class="caption">
+                                    <h6>Cafe Colombiano $15.000</h6>
+                                    <button class="btn btn-comprar">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="producto">
+                                <img src="img/espresso.jpeg" class="d-block w-100" alt="...">
+                                <div class="caption">
+                                    <h6>Cafe Espresso $15.369</h6>
+                                    <button class="btn btn-comprar">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="producto">
+                                <img src="img/suizo.jpeg" class="d-block w-100" alt="...">
+                                <div class="caption">
+                                    <h6>Cafe Suizo $17.700</h6>
+                                    <button class="btn btn-comprar">Comprar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <div class="carousel-item carousel-item2">
+                    <div class="row">
+                        <div class="col">
+                        <div class="producto">
+                            <img src="img/cappuccino.jpeg" class="d-block w-100" alt="...">
+                            <div class="caption">
+                            <h6>Cafe Cappuccino $16.900</h6>
+                            <button class="btn btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="producto">
+                            <img src="img/italiano.jpeg" class="d-block w-100" alt="...">
+                            <div class="caption">
+                            <h6>Cafe Italiano $16.900</h6>
+                            <button class="btn btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="producto">
+                            <img src="img/moka.jpeg" class="d-block w-100" alt="...">
+                            <div class="caption">
+                            <h6>Cafe Moka $16.900</h6>
+                            <button class="btn btn-comprar">Comprar</button>
+                            </div>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <div class="producto">
+                            <img src="img/descafeinado.jpeg" class="d-block w-100" alt="...">
+                            <div class="caption">
+                            <h6>Cafe Descafeinado $11.990</h6>
+                            <button class="btn btn-comprar">Comprar</button>
+                        
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+            </div>
+            <div class="btnVerMas">
+                <button class="btn btn-ver-mas">Ver más</button>
+            </div>
+        </section>
 
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
-
-    
 
   </body>
 </html>
