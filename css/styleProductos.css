@@ -238,6 +238,63 @@ display: none;
   display: flex;
   flex-wrap: wrap;
 }
+/* ################################ SECCION DE CARRITO ################################ */
+#carrito {
+  position: fixed;
+  top: 10%;
+  right: 2%;
+  width: 300px;
+  padding: 20px;
+  border-radius: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none; /* Inicialmente oculto */
+}
+
+#carrito.visible {
+  display: block; /* Mostrar cuando tenga productos */
+}
+
+#carrito ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#carrito li {
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+#carrito h2 {
+  font-size: 20px;
+  font-family:'Poppins', sans-serif;
+  font-weight: bolder;
+}
+
+#carrito p {
+  margin-top: 10px;
+}
+
+#carrito button {
+  padding: 5px 10px;
+  background-color: #8a4b21; /* Marrón */
+  color: #fff; /* Letra blanca */
+  border: none;
+  cursor: pointer;
+}
+
+#carrito button:hover {
+  background-color: #d89670; /* Marrón más oscuro al pasar el mouse */
+}
+
+#total {
+  font-weight: bolder;
+}
 
 /* ################################ SECCION DE REDES ################################ */
 
